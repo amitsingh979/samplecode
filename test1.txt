@@ -1,0 +1,10 @@
+ Volume in drive D is New Volume
+ Volume Serial Number is F8FB-C2F4
+
+ Directory of D:\tools\myproj
+
+09-09-2019  16:38    <DIR>          .
+09-09-2019  16:38    <DIR>          ..
+09-09-2019  16:38                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  579,874,410,496 bytes free
