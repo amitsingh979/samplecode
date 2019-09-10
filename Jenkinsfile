@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Report') {
       steps {
-        junit 'build/reports/**/*.xml'
+        junit '**/test-reports/*.xml'
         archiveArtifacts 'build/libs/**/*.jar'
       }
     }
