@@ -13,8 +13,8 @@ pipeline {
     }
     stage('Report') {
       steps {
-        junit '**/test-reports/*.xml'
-        archiveArtifacts 'build/libs/**/*.jar'
+        bat(script: 'cp -r app/build/test-results $WORKSPACE/test-results', returnStatus: true, returnStdout: true)
+        junit '**/test-results/**/*.xml'
       }
     }
   }
