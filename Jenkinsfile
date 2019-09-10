@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
-        bat(script: 'ipconfig', returnStatus: true, returnStdout: true)
+        bat(script: 'get Ipconfig', encoding: 'Ipconfig', returnStatus: true, returnStdout: true)
       }
     }
   }
