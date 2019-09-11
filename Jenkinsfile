@@ -14,5 +14,10 @@ pipeline {
         sh './Test-1.bat'
       }
     }
+    stage('report') {
+      steps {
+        junit '\'build/reports/**/*.xml'
+      }
+    }
   }
 }
