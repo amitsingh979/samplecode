@@ -11,7 +11,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh 'pwd'
+        sh './batchdate.bat'
       }
     }
   }
