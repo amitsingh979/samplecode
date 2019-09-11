@@ -11,7 +11,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh './batchdate.bat'
+        sh './jenkins/scripts/test.sh'
       }
     }
   }
