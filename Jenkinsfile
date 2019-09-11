@@ -6,14 +6,10 @@ pipeline {
         bat 'ipconfig'
       }
     }
-    stage('test') {
+    stage('Tests') {
       steps {
         echo 'test stage'
-      }
-    }
-    stage('Report') {
-      steps {
-        junit '**/surefire-reports/**/*.xml'
+        bat(script: 'ipconfig', returnStatus: true, returnStdout: true)
       }
     }
   }
