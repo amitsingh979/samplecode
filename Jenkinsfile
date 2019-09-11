@@ -9,7 +9,7 @@ pipeline {
     stage('Tests') {
       steps {
         echo 'test stage'
-        bat(script: 'ipconfig', returnStatus: true, returnStdout: true)
+        bat 'ipconfig'
       }
     }
   }
