@@ -14,5 +14,10 @@ pipeline {
         sh './Test-1.bat'
       }
     }
+    stage('Report') {
+      steps {
+        realtimeJUnit(testResults: 'target/surefire-reports/**/*.xml"')
+      }
+    }
   }
 }
